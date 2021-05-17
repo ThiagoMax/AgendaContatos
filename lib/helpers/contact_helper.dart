@@ -69,9 +69,9 @@ class ContactHelper {
 
   Future<List> gettAllContact() async {
     Database dbContact = await db;
-    List ListMap = await dbContact.rawQuery("SELECT * FROM $contactTable");
+    List listMap = await dbContact.rawQuery("SELECT * FROM $contactTable");
     List<Contact> listContact = List();
-    for (Map m in ListMap) {
+    for (Map m in listMap) {
       listContact.add(Contact.fromMap(m));
     }
     return listContact;
