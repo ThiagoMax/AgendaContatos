@@ -87,6 +87,7 @@ class ContactHelper {
     Database dbContact = await db;
     dbContact.close();
   }
+  //parei aqui..
 }
 
 class Contact {
